@@ -37,10 +37,10 @@ function install() {
     mkdir -p /tmp/$file_dir
     mkdir -p $app_path
     curl -o /tmp/${file_name} -sSL $file_url
-    tar xzf /tmp/${file_name} -C /tmp
+    unzip /tmp/${file_name} -C /tmp
 
     ls -la /tmp/${file_dir}
-    cp -f /tmp/${file_dir}/frpc ${app_path}/
+    cp -f /tmp/${file_dir}/rathole ${app_path}/
     rm -rf /tmp/${file_name}
     rm -rf /tmp/${file_dir}
     ls -la $app_path
