@@ -2,8 +2,8 @@
 set +u
 
 WAIT_PIDS=()
-ADDON_PATH='/share/frp'
-CONFIG_PATH='/share/rathole/rathole.ini'
+ADDON_PATH='/share/rathole'
+CONFIG_PATH='/share/rathole/server.toml'
 
 function stop_frpc() {
     bashio::log.info "Shutdown frpc client"
