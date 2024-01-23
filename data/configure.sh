@@ -2,7 +2,7 @@
 
 build_arch=$1
 version=$2
-frp_url="https://github.com/fatedier/frp/releases/download/"
+frp_url="https://github.com/rapiz1/rathole/releases/download/"
 app_path="/usr/src"
 
 function select_machine() {
@@ -30,9 +30,9 @@ function select_machine() {
 
 function install() {
     local machine=$(select_machine)
-    local file_name="frp_${version}_linux_${machine}.tar.gz"
+    local file_name="rathole-x86_64-unknown-linux-gnu.zip"
     local file_url="${frp_url}v${version}/${file_name}"
-    local file_dir=$(echo ${file_name} | sed 's/.tar.gz//')
+    local file_dir=$(echo ${file_name} | sed 's/.zip//')
 
     mkdir -p /tmp/$file_dir
     mkdir -p $app_path
