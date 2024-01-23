@@ -36,7 +36,7 @@ if [[ ! -n "${log_file}" ]]; then
 fi
 
 cd /usr/src
-./frpc -c $CONFIG_PATH & logger $log_file & WAIT_PIDS+=($!)
+./rathole  $CONFIG_PATH & logger $log_file & WAIT_PIDS+=($!)
 
 
 trap "stop_frpc" SIGTERM SIGHUP
