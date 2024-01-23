@@ -35,7 +35,7 @@ if [[ ! -n "${log_file}" ]]; then
     bashio::exit.nok
 fi
 
-cd /tmp
+cd /usr/src
 ./rathole  $CONFIG_PATH & logger $log_file & WAIT_PIDS+=($!)
 
 
