@@ -39,6 +39,7 @@ function install() {
 
     ls -la /tmp/
     cp -f /tmp/rathole /usr/src/
+    chmod +x /usr/src/rathole
     cp -f /tmp/${file_name}/rathole /usr/src/
     rm -rf /tmp/${file_name}
     ls -la $app_path
