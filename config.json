@@ -1,8 +1,8 @@
 {
-    "name": "Hass.io FRP client",
+    "name": "rathole",
     "version": "0.0.1",
-    "slug": "hassio-frp-client",
-    "description": "A fast reverse proxy client for Hass.io to help you expose a home assistant behind a NAT or firewall to the internet.",
+    "slug": "rathole",
+    "description": "rathole",
     "startup": "application",
     "boot": "auto",
     "host_network": true,
